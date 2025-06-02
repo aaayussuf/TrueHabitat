@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 import Home from '../pages/Home';
 import ForSale from '../pages/ForSale';
@@ -16,7 +16,6 @@ import PropertyDetails from '../pages/PropertyDetails';
 
 const AppRoutes = () => {
   return (
-    <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/for-sale" element={<ForSale />} />
@@ -31,7 +30,6 @@ const AppRoutes = () => {
         <Route path="/post-property" element={<PostProperty />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
       </Routes>
-    </Router>
   );
 };
 
