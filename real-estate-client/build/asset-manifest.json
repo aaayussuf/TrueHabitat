@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.42c22d12.css",
+    "main.js": "/static/js/main.9ae946e2.js",
+    "static/media/modern-house.png": "/static/media/modern-house.42cc28d3d70c7bb6edc7.png",
+    "index.html": "/index.html",
+    "main.42c22d12.css.map": "/static/css/main.42c22d12.css.map",
+    "main.9ae946e2.js.map": "/static/js/main.9ae946e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42c22d12.css",
+    "static/js/main.9ae946e2.js"
+  ]
+}

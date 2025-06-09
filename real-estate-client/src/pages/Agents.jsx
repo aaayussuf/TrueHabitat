@@ -6,14 +6,14 @@ const agents = [
     name: 'John Doe',
     phone: '555-123-4567',
     email: 'john@example.com',
-    photo: 'https://via.placeholder.com/150?text=John+Doe',
+    photo: '/src/Pictures/modern-house.png',
   },
   {
     id: 2,
     name: 'Jane Smith',
     phone: '555-987-6543',
     email: 'jane@example.com',
-    photo: 'https://via.placeholder.com/150?text=Jane+Smith',
+    photo: '/src/Pictures/modern-house.png',
   },
 ];
 

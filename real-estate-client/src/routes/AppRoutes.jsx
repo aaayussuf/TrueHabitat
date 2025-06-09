@@ -1,36 +1,25 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-
+import Layout from './Layout';
 import Home from '../pages/Home';
-import ForSale from '../pages/ForSale';
-import Rental from '../pages/Rental';
-import Accommodation from '../pages/Accommodation';
 import Agents from '../pages/Agents';
-import Blog from '../pages/Blog';
+import Blog from '../pages/Blogs';
 import AboutUs from '../pages/AboutUs';
 import Contact from '../pages/Contact';
-import Register from '../pages/Register';
-import Login from '../pages/Login';
-import PostProperty from '../pages/PostProperty';
-import PropertyDetails from '../pages/PropertyDetails';
+import Properties from '../pages/Properties';
 
-const AppRoutes = () => {
-  return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/for-sale" element={<ForSale />} />
-        <Route path="/rental" element={<Rental />} />
-        <Route path="/accommodation" element={<Accommodation />} />
-        <Route path="/agents" element={<Agents />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/post-property" element={<PostProperty />} />
-        <Route path="/property/:id" element={<PropertyDetails />} />
-      </Routes>
-  );
-};
+const routes = [
+  {
+    path: '/',
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'properties', element: <Properties /> },
+      { path: 'agents', element: <Agents /> },
+      { path: 'blogs', element: <Blog /> },
+      { path: 'about-us', element: <AboutUs /> },
+      { path: 'about', element: <AboutUs /> },
+      { path: 'contact', element: <Contact /> },
+    ],
+  },
+];
 
-export default AppRoutes;
+export default routes;
